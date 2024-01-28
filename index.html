@@ -1,41 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
-        #gfg1{
-            animation-name: text;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-        }
-        #geek1{
-            font-size: 40px;
-            text-align: center;
-            font-weight: bold;
+        * {
+            margin: 0;
+            padding: 0;
 
         }
-        #geek2{
-            font-size: 17px;
-            font-weight: bold;
-            text-align: center;
+
+        body {
+            background-image: url('123.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
-        @keyframes text{
-            from{
-                margin-top: 400px;
-            }
-            to{
-                margin-top: 0px;
-            }
+        header {
+            background-color: rgba(7, 7, 7, 0.54);
+            padding-bottom: 2px;
+            padding-top: 2px;
+            color: aliceblue;
+        }
+
+        i {
+            color: aliceblue;
+            margin-left: 5px;
+        }
+
+        .header {
+            height: max-content;
+
+
+        }
+
+        .log {
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            float: right;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.733);
+            opacity: 0.8;
+            width: 100%;
+            float: right;
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+        }
+
+        .navv {
+            overflow: hidden;
+        }
+
+        .navv span {
+            float: right;
+            margin-left: 10px;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            background-color: rgba(0, 0, 0, 0.733);
+            color: white;
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            position: relative;
+            display: inline-block;
+            opacity: 0.8;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.733);
+            ;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgba(0, 0, 0, 0.733);
+            ;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        .navv2 {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.733);
+            font-family: Arial;
+            padding-right: 50px;
+        }
+
+        .navv2 a {
+            float: right;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 20px 16px;
+            text-decoration: none;
+        }
+
+        .data {
+            position: relative;
+            top: 120px;
+            text-align: center;
+            border: 2px solid rgba(0, 0, 0, 0.758);
+            background-color: rgba(0, 0, 0, 0.758);
+            color: white;
+            margin: auto;
+            width: 450px;
+            height: 160px;
+            padding: 10px;
+
+        }
+
+        .data h2 {
+            font-size: 18px;
+        }
+
+        .foot {
+            position: relative;
+            top: 400px;
+        }
+
+        .foot h2 {
+            color: white;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .email {
+            background-color: white;
+            width: fit-content;
+            float: right;
+            padding-right: 5px;
         }
     </style>
 </head>
+
 <body>
-    <div id="gfg1">
-        <div id="geek1">VIT Chennai</div>
-        <div id="geek2">STartup foundation</div>
+    <div>
+        <div class="header">
+            <header>
+                <i style="font-size:24px" class="fa">&#xf099;</i>
+                <i style="font-size:24px" class="fa">&#xf16d;</i>
+                <i style="font-size:24px" class="fa">&#xf16a;</i>
+                <i style="font-size:24px" class="fa">&#xf09a;</i>
+                <span class="log">
+                    <input type="submit" value="Login">
+                </span>
+            </header>
+        </div>
+        <div class="navv">
+            <nav>
+                <span class="search div1">
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="fname">
+                    <i style="font-size:24px" class="fa">&#xf002;</i>
+                </span>
+                <span class="dropdown div1">
+                    <button class="dropbtn">Company</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </span>
+                <span class="dropdown div1">
+                    <button class="dropbtn">Childs</button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </span>
+                <span class="dropdown div1">
+                    <button class="dropbtn">Women</button>
+                    <div class="dropdown-content">
+
+                        <a href="#">Eye Liner</a>
+                        <a href="#">Blush</a>
+                        <a href="#">Nail polish</a>
+                        <a href="#">Nail Paint</a>
+                    </div>
+                </span>
+                <span class="dropdown div1">
+                    <button class="dropbtn">Men</button>
+                    <div class="dropdown-content">
+
+                        <a href="#">Face Wash</a>
+                        <a href="#">Face Serum</a>
+                        <a href="#">Face Scrub</a>
+                    </div>
+                </span>
+            </nav>
+        </div>
+        <div class="navv2">
+            <a href="#home">Accessories</a>
+            <a href="#home">Hats</a>
+            <a href="#home">Boots</a>
+            <a href="#home">Avalanche</a>
+            <a href="#home">Skins</a>
+            <a href="#home">Apperal</a>
+        </div>
+    </div>
+    <div class="data">
+        <h2>INTRODUCING THE</h2><br>
+        <h1>WILDCAT 1</h1><br>
+        <h2>THE NEWEST RECURIT IN THE WILDCAT GANG</h2><br>
+        <button class="shop">SHOP NOW</button>
+    </div>
+    <div class="foot">
+        <footer>
+            <h2>&copy: 2024 THE FASHIONS COMPANY</h2>
+            <div class="email">
+                <p>
+                    <a href="sehrawataditya22@gmail.com">Email Us</a>
+                    <i class="fa fa-envelope" style="color:black"></i>
+                </p>
+
+            </div>
+        </footer>
     </div>
 </body>
+
 </html>
